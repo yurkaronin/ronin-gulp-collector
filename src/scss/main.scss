@@ -1,0 +1,14 @@
+/* основной стилевой файл */
+@import "./blocks/**/*scss";
+
+p {
+  color: yellow;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+}

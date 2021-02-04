@@ -1,0 +1,25 @@
+{
+  "name": "super-pupper-task-manager",
+  "version": "1.0.0",
+  "description": "Мой первый сборщик, который я понимаю и люблю.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yuriy Savchenko",
+  "license": "ISC",
+  "dependencies": {
+    "save-dev": "0.0.1-security"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rm": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "node-sass": "^5.0.0"
+  }
+}
