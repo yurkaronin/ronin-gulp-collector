@@ -84,6 +84,20 @@ task('html-final', () => {
     .pipe(dest('./final/'))
 });
 
+/* задание на: собираем html файлы */
+task('fonts', () => {
+  return src('./src/fonts/*')
+    .pipe(dest('./build/fonts/'))
+    .pipe(browserSync.reload({ stream: true }));
+});
+
+/* задание на: собираем html файлы */
+task('fonts--final', () => {
+  return src('./src/fonts/*')
+    .pipe(dest('./final/fonts/'))
+});
+
+
 /* задание на: сборка стилей css  */
 task('styles', () => {
   return src(['./node_modules/normalize.css/normalize.css', './src/scss/main.scss'])
@@ -229,12 +243,12 @@ task('server-final', () => {
 /* основной таск (дефолтный): последовательное выполнение */
 task('default',
   series('clean', 'svg-sprite',
-    parallel('html', 'images', 'styles', 'scripts', 'libs'),
+    parallel('html', 'images', 'fonts', 'styles', 'scripts', 'libs'),
     parallel('server', 'watch')
   ));
 
 task('fatality',
   series('clean-final', 'svg-sprite-final',
-    parallel('html-final', 'images-final', 'styles-final', 'scripts-final', 'libs-final'),
+    parallel('html-final', 'images-final', 'fonts--final', 'styles-final', 'scripts-final', 'libs-final'),
     parallel('server-final')
   ));

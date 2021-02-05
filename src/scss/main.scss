@@ -1,33 +1,6 @@
-/* базовые стили проекта  */
 @import "./base";
 
-/* повторяющиеся блоки бэм-блоки */
 @import "./blocks/**/*scss";
 
-/* секции */
 @import "./sections/**/*scss";
-
-.demo-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.demo-list li {
-  min-height: 100px;
-  background-color: rgb(185, 176, 176);
-  margin-right: 10px;
-  margin-bottom: 20px;
-}
-
-a {
-  text-decoration: none;
-}
 
