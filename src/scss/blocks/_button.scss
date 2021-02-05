@@ -1,0 +1,60 @@
+/* кнопки */
+.button {
+  background: #fb565a;
+  border-radius: 3px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 17px 40px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+}
+
+.button--green {
+  background-color: #00ca74;
+}
+
+.button--yellow {
+  background-color: #efc849;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  background: #d7373b;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.button--green:hover,
+.button--green:focus {
+  background-color: #00bc6c;
+}
+
+.button--green:active {
+  background: #00bc6c;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.button--yellow:hover,
+.button--yellow:focus {
+  background-color: #eab534;
+}
+
+.button--yellow:active {
+  background: #eab534;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.button-close {
+  border: none;
+  background-color: transparent;
+}
