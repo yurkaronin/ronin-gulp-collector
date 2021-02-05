@@ -219,6 +219,7 @@ task('watch', () => {
   watch('./src/svg/icons/*.svg', series('svg-sprite'));
   watch('./src/libs/**/*', series('libs'));
   watch('./src/img/**/*', series('images'));
+  watch('./src/fonts/**/*', series('fonts'));
 })
 
 
