@@ -197,6 +197,12 @@ task('libs-final', () => {
 /* задание на: работа с растровой графикой  */
 task('images', () => {
   return src('./src/img/**/*')
+    .pipe(
+      imagemin({
+        progressive: true,
+        interlaced: true,
+      })
+    )
     .pipe(dest('./build/img/'));
 })
 
